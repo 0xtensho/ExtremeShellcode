@@ -1,0 +1,1 @@
+size_t httpToBuffer(const char* url, char** buffer);
