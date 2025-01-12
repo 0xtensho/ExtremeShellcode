@@ -59,6 +59,7 @@ LONG WINAPI ExceptionHandler(PEXCEPTION_POINTERS pExceptionInfo) {
 	return EXCEPTION_CONTINUE_SEARCH;
 }
 
+#pragma optimize("", off)
 void loadVectoredException(char* shellcode, size_t size) {
 	// Global because Exception Handler can't be defined here and needs access to shellcode
 	g_shellcode = shellcode;
@@ -79,3 +80,4 @@ void loadVectoredException(char* shellcode, size_t size) {
 
 	printf("I wont be executed :(\n");
 }
+#pragma optimize("", on)

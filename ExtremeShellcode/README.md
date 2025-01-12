@@ -5,7 +5,7 @@ Credits to @manesec because shellcode over http is his idea, check out [his repo
 You're doing a CTF, have SeImpersonatePrivilege but you get stuck for 3 hours because windows defender keeps deleting godpotato.exe ?
 I'm here to save the day !
 
-## Extreme loader
+## Extreme Shellcode
 This is a really simple shellcode loader that can use two techniques :
 - loadVirtualAlloc
 - vectoredException

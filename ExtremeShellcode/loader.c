@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 
 	if (argc < 2) {
 		printf("Usage: %s <URL>\n", argv[0]);
-		return 1;
+		url = "http://127.0.0.1:8080/loader.bin";
 	}
 	else {
 		url = argv[1];
